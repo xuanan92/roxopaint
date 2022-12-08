@@ -55,11 +55,9 @@ function App() {
         <Route path='/documents' element={<DocumentsPage />} exact />
         <Route path='/colorpallete' element={<ColorPalletePage />} exact />
         <Route path='/howtos' element={<HowTosPage />} exact />
-        <Route path='/' element={<HomePage />} exact />
         <Route path='/socialresponsibility' element={<SocialResponsibilityPage />} exact />
         <Route path='/careers' element={<CareersPage />} exact />
         <Route path='/publicrelation' element={<PublicRelationPage />} exact />
-        <Route path='/contact' element={<ContactPage />} exact />
         <Route path='/faqs' element={<FAQsPage />} exact />
         <Route path='/paintcal' element={<PaintCalPage />} exact />
         <Route path='/sitemap' element={<SiteMapPage />} exact />

@@ -6,10 +6,10 @@ const Footer =()=>{
   return(
   <>
     <footer>
-      <div className='row'>
+      <div className='row-s'>
         <div className='professor col-s-3'>
           <p>
-            <span>DÀNG CHO<br />CHUYÊN GIA</span>
+            <span>DÀNH CHO<br />CHUYÊN GIA</span>
           </p>
         </div>
         <div className='col-s-3'>
@@ -32,7 +32,10 @@ const Footer =()=>{
           </ul>
         </div>
       </div>
-      <div className='row'>
+
+      <hr />
+
+      <div className='row-s'>
         <div className='col-s-3'>
           <ul>
             <li><p>ROXO</p></li>
@@ -66,23 +69,24 @@ const Footer =()=>{
           </ul>
         </div>
       </div>
-      <div className='row'>
-        <div className='col-s-4'>
+
+      <hr />
+
+      <div className='row-s'>
+        <div className='centerBlock col-s-4'>
           <i />
         </div>
-        <div className='col-s-4'>
+        <div className='centerBlock col-s-4'>
           <ul>
             <li><Link to='https://facebook.com/sonroxo'><i className='fa-brands fa-square-facebook' /></Link></li>
             <li><span>Cửa hàng</span></li>
           </ul>
         </div>
         <div className='col-s-4'>
-          <p>
-            <select>
+          <select>
             <option value='vietnamese' selected='selected'>Vietnamese</option>
             <option valuw='english'>English</option>
-            </select>
-          </p>
+          </select>
         </div>
       </div>
     </footer>

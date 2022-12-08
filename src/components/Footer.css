@@ -1,10 +1,107 @@
 @media only screen and (min-width: 280px){
+.row-s
+{
+  padding:5px 0px;
+}
+
+.col-s-3
+{
+  display:flex;
+  justify-content:center;
+}
+
+.col-s-4
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+hr
+{
+  width:80%;
+  border-style:none;
+  background-color:gray;
+  height:1px;
+  margin: 0 auto;
+  margin-top: 5px;
+}
 footer
 {
+width:100%;
 background-color:#0b233e;
+height: 185px;
 color: white;
 }
 
+footer .professor
+{
+  display:flex;
+  font-size:9px;
+  align-items:center;
+  justify-content:center;
+  text-align:center;
+}
+
+footer .professor span
+{
+  display:block;
+  background-color:gray;
+  padding: 5px 5px;
+  font-weight:bold;
+  color:#0b233e;
+}
+
+footer p
+{
+  margin: 0px;
+  padding: 0px;
+}
+
+footer ul
+{
+  width:52px;
+  margin:0px auto;
+  padding: 0px;
+}
+
+footer li
+{
+  list-style:none;
+  font-size: 10px;
+}
+
+footer li span
+{
+  text-align:center;
+}
+
+footer a
+{
+  font-size: 6px;
+  text-decoration:none;
+  color: white;
+}
+
+footer select
+{
+  font-size: 6px;
+}
+
+}
+
+
+@media only screen and (min-width: 360px){
+}
+
+@media only screen and (min-width: 480px){
+}
+
+@media only screen and (min-width: 720px){
+}
+
+@media only screen and (min-width: 1080px){
 footer ul
 {
   margin:0px;
@@ -14,14 +111,20 @@ footer ul
 footer li
 {
   list-style:none;
-  font-size: 12px;
+  font-size: 16px;
 }
 
 footer a
 {
-  font-size: 8px;
+  font-size: 12px;
   text-decoration:none;
   color: white;
 }
 
+}
+
+@media only screen and (min-width: 1280px){
+}
+
+@media only screen and (min-width: 1920px){
 }

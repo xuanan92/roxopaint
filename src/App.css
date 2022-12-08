@@ -1,10 +1,23 @@
 @media only screen and ( min-width: 280px ){
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
 .App
 {
-  padding:5px;
+padding:5px;
+font-family: 'Open Sans', Sans-serif;
 }
 
-.row
+.break
+{
+  height:20px;
+}
+
+h1
+{
+  font-family: 'UVN Ben Xuan'
+}
+
+.row-s
 {
   clear:both;
   display:flex;
@@ -17,7 +30,12 @@
 
 .col-s-4
 {
-  width: 33.3%;
+  width: 33.33%;
+}
+
+.col-l-2
+{
+  width: 100%;
 }
 
 }
@@ -61,6 +79,10 @@
 }
 
 @media only screen and ( min-width: 720px ){
+.row-m
+{
+  display: flex;
+}
 .App
 {
   padding:5px;
@@ -74,6 +96,10 @@
 .col-s-4
 {
   width: 100%;
+}
+.col-l-2
+{
+  width: 50%;
 }
 
 

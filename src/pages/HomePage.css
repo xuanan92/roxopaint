@@ -1,0 +1,75 @@
+@media only screen and (min-width:280px)
+{
+.bannerContainer
+{
+  position: relative;
+  background-image: url("{process.env.PUBLIC_URL + './logo512.png'}");
+  background-position:center;
+  background-size:contain;
+  height:300px;
+}
+
+.bannerContainer .buttonContainer
+{
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+}
+
+button
+{
+  padding: 15px;
+  margin: 5px;
+  border-style: none;
+  background-color: lightgray;
+  color: black;
+  border-radius: 10px 0px;
+  text-transform:uppercase;
+}
+
+h1
+{
+  text-align:center;
+}
+
+.imgTextLeft
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  margin: 15px 0px;
+}
+.imgTextLeft .video
+{
+  width:90%;
+  aspect-ratio: 16/9;
+}
+
+.imgTextLeft .image
+{
+  width:100%;
+}
+.imgTextRight
+{
+  min-width:200px;
+  padding: 0px;
+}
+
+h2
+{
+  padding: 5px;
+  margin: 0px;
+}
+
+p
+{
+  text-align:justify;
+  padding: 5px;
+  margin: 0px;
+}
+
+}
+
+@media only screen and (min-width:720px)
+{
+}
