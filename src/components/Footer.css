@@ -1,0 +1,27 @@
+@media only screen and (min-width: 280px){
+footer
+{
+background-color:#0b233e;
+color: white;
+}
+
+footer ul
+{
+  margin:0px;
+  padding: 5px 5px;
+}
+
+footer li
+{
+  list-style:none;
+  font-size: 12px;
+}
+
+footer a
+{
+  font-size: 8px;
+  text-decoration:none;
+  color: white;
+}
+
+}
