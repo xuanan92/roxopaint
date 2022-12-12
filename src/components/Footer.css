@@ -1,7 +1,7 @@
 @media only screen and (min-width: 280px){
 .row-s
 {
-  padding:5px 0px;
+  padding:6px 0px;
 }
 
 .col-s-3
@@ -41,7 +41,6 @@ footer .professor
   font-size:9px;
   align-items:center;
   justify-content:center;
-  text-align:center;
 }
 
 footer .professor span
@@ -51,12 +50,15 @@ footer .professor span
   padding: 5px 5px;
   font-weight:bold;
   color:#0b233e;
+  text-align:center;
+  font-size:8px;
 }
 
 footer p
 {
   margin: 0px;
   padding: 0px;
+  text-align:justify;
 }
 
 footer ul
@@ -87,6 +89,38 @@ footer a
 footer select
 {
   font-size: 6px;
+}
+
+
+footer .socialMediaIcon svg
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:15px;
+  padding: 0 2px;
+}
+
+footer .locationContainer ul
+{
+  width: 100%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+
+footer .iconLocation svg
+{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  font-size:10px;
+}
+
+footer .locationContainer ul li
+{
+  display:inline-block;
+  padding: 0 3px;
 }
 
 }

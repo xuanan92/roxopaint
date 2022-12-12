@@ -3,10 +3,21 @@
 .bannerContainer
 {
   position: relative;
-  background-image: url("{process.env.PUBLIC_URL + './logo512.png'}");
-  background-position:center;
-  background-size:contain;
-  height:300px;
+  height:auto;
+}
+
+.bannerContainer .bannerImage
+{
+  width: 100%;
+}
+
+.bannerContainer .bannerImage img
+{
+  width:100%;
+  height: 300px;
+  object-fit:none;
+  object-position:center;
+  aspect-ratio: 16/9;
 }
 
 .bannerContainer .buttonContainer
@@ -27,46 +38,11 @@ button
   text-transform:uppercase;
 }
 
-h1
-{
-  text-align:center;
-}
-
-.imgTextLeft
-{
-  display:flex;
-  align-items:center;
-  justify-content:center;
-  margin: 15px 0px;
-}
-.imgTextLeft .video
-{
-  width:90%;
-  aspect-ratio: 16/9;
-}
-
 .imgTextLeft .image
 {
   width:100%;
 }
-.imgTextRight
-{
-  min-width:200px;
-  padding: 0px;
-}
 
-h2
-{
-  padding: 5px;
-  margin: 0px;
-}
-
-p
-{
-  text-align:justify;
-  padding: 5px;
-  margin: 0px;
-}
 
 }
 

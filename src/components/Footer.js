@@ -1,5 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
+import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
+
 import './Footer.css'
 
 const Footer =()=>{
@@ -73,12 +77,21 @@ const Footer =()=>{
       <hr />
 
       <div className='row-s'>
-        <div className='centerBlock col-s-4'>
-          <i />
+        <div className='socialMediaIcon col-s-4'>
+          <a href="https://facebook.com/sonroxo">
+            <FontAwesomeIcon icon={faFacebook} />
+          </a>
+          <a href="https://youtube.com/roxopaint">
+            <FontAwesomeIcon icon={faYoutube} />
+          </a>
         </div>
-        <div className='centerBlock col-s-4'>
+        <div className='locationContainer col-s-4'>
           <ul>
-            <li><Link to='https://facebook.com/sonroxo'><i className='fa-brands fa-square-facebook' /></Link></li>
+            <li className='iconLocation'>
+              <Link to='./'>
+                <FontAwesomeIcon icon={faLocationDot} />
+              </Link>
+    </li>
             <li><span>Cửa hàng</span></li>
           </ul>
         </div>

@@ -1,10 +1,21 @@
 @media only screen and ( min-width: 280px ){
 @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
 
+@font-face{
+  font-family: "UVN Ben Xuan";
+  src: url('./fonts/UVN Ben Xuan.ttf') format('truetype');
+  font-weight:normal;
+}
+
+@font-face{
+  font-family: "UVN Ben Xuan";
+  src: url('./fonts/UVNBenXuan_B.TTF') format('truetype');
+  font-weight:bold;
+}
+
 .App
 {
-padding:5px;
-font-family: 'Open Sans', Sans-serif;
+padding:10px;
 }
 
 .break
@@ -14,7 +25,19 @@ font-family: 'Open Sans', Sans-serif;
 
 h1
 {
-  font-family: 'UVN Ben Xuan'
+  font-family: 'UVN Ben Xuan';
+  font-weight:bold;
+  font-size: 26px;
+}
+h2
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  font-weight:bold;
+}
+p
+{
+  font-size:12px;
 }
 
 .row-s

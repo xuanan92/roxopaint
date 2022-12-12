@@ -27,6 +27,7 @@ import FAQsPage from './pages/FAQsPage.js'
 import PaintCalPage from './pages/PaintCalPage.js'
 import SiteMapPage from './pages/SiteMapPage.js'
 import BuyNowPage from './pages/BuyNowPage.js'
+import IntroPage from './pages/IntroPage.js'
 import PoliciesPage from './pages/PoliciesPage.js'
 import BecomePartnerPage from './pages/BecomePartnerPage.js'
 import PartnerWebsitePage from './pages/PartnerWebsitePage.js'
@@ -53,6 +54,7 @@ function App() {
         <Route path='/contractors' element={<ContractorsPage />} exact />
         <Route path='/certificate' element={<CertificatePage />} exact />
         <Route path='/documents' element={<DocumentsPage />} exact />
+        <Route path='/intro' element={<IntroPage />} exact />
         <Route path='/colorpallete' element={<ColorPalletePage />} exact />
         <Route path='/howtos' element={<HowTosPage />} exact />
         <Route path='/socialresponsibility' element={<SocialResponsibilityPage />} exact />

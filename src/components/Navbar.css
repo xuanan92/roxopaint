@@ -1,12 +1,42 @@
 @media only screen and (min-width: 280px){
 .container{
-}
-nav{
-  background: #7f86b1;
   clear: both;
 }
+.NavbarLogo
+{
+  display:flex;
+  align-items:center;
+  position: relative;
+  height: 50px;
+}
+
+.NavbarBar
+{
+  position:absolute;
+  right:0px;
+  padding: 2px 5px;
+  width: 20px;
+  border-style:solid;
+  border-width:1px;
+  border-radius:3px;
+  text-align:center;
+}
+
+.NavbarLogo img
+{
+  height:40px;
+}
+
+nav{
+  background: #7f86b1;
+  padding:0px;
+  margin:0px;
+  clear: both;
+  width:100%;
+}
 nav ul{
-  padding: 10px 15px;
+  padding: 5px 10px;
+  margin:0px;
   list-style: none;
 }
 nav ul li{
@@ -16,4 +46,13 @@ nav ul li a{
   text-decoration: none;
   color: white;
 }
+.disable
+{
+  display:none;
+}
+.enable
+{
+  display:block;
+}
+
 }
