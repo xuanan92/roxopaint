@@ -503,13 +503,6 @@ export default function ProductsPage() {
     const [clearClick,setClearClick] = useState(false)
     const handleClearClick = () => setClearClick(!clearClick)
 
-  // coding
-  const [click, setClick] = useState(false)
-  const handleClick = contentID => {
-    switch (contentID) {
-      case 'contentID-1':
-    }
-
   return(
     <>
       <div className='bannerContainer'>
