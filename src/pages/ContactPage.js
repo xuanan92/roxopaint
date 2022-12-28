@@ -1,12 +1,17 @@
 import React from 'react'
+import TitleCenter from '../components/TitleCenter.js'
+import Banner from '../components/Banner.js'
+import Form from '../components/Form.js'
 
-const ContactPage =()=>{
+export default function ContactPage(){
   return(
   <>
-    <div className='contactPage'>
-      <p>This is a contact page</p>
-    </div>
+    <Banner
+    sendImg='./img/backgroundtheme.jpg'
+    sendAlt='roxo banner background'
+    />
+    <TitleCenter name='Liên hệ'/>
+    <Form action='' inputName inputTel inputEmail inputMes submitValue='Gửi'/>
   </>
   )
 }
-export default ContactPage

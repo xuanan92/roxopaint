@@ -1,46 +1,55 @@
-import React, { useState} from "react"
+import React, { useState } from "react"
 import { Link } from 'react-router-dom'
-import './Navbar.css'
+import Button from './Button.js'
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons'
 
-function Navbar() {
-  const [click,setClick] = useState(true)
-  const handleClick = () => {
-    setClick(!click);
-  }
+export default function Navbar() {
+  const [navClick,setNavClick] = useState(false)
+  const handleNavClick = () => setNavClick(!navClick)
+
   return(
-    <div className='container'>
-      <div className='NavbarLogo'>
-        <img src={process.env.PUBLIC_URL+'./img/roxodarktext.png'} alt='roxo logo' />
-        <div className='NavbarBar' onClick={handleClick}>
-          <FontAwesomeIcon icon={click ? faBars : faXmark} />
+  <div className='relative items-center block w-full clear-both stablet:flex'>
+      <div className='flex h-12 align-middle'>
+        <div className='flex items-center h-12'>
+          <img className='h-full' src='./img/roxodarktext.png' alt='roxo logo' />
+        </div>
+        <div className='flex items-center p-0 m-0 ml-auto text-center order:2 stablet:hidden'>
+          <Button buttonStyle='btn--secondary' buttonSize='btn--nav' onClick={handleNavClick}>
+            <FontAwesomeIcon icon={navClick ? faXmark : faBars} />
+          </Button>
         </div>
       </div>
-      <nav className='Navbar disable'>
-        <ul>
-            <li>
-              <Link to='./'> Trang chủ </Link>
-            </li>
-            <li>
-              <Link to='./products'> Sản phẩm Roxo </Link>
-            </li>
-            <li>
-              <Link to='./videos'> Videos </Link>
-            </li>
-            <li>
-              <Link to='./technical'> Kỹ thuật </Link>
-            </li>
-            <li>
-              <Link to='./grow'> Phát triển kinh doanh </Link>
-            </li>
-            <li>
-              <Link to='./contact'> Liên hệ </Link>
-            </li>
+
+      <nav className={`items-center w-full m-0 p-0 clear-both bg-blue-900 mt-2 ${navClick ? 'block' : 'hidden stablet:flex stablet:w-auto stablet:bg-white stablet:ml-auto stablet:mt-0 stablet:items-center'}`}>
+        <ul className='pl-4 text-white stablet:text-black stablet:flex stablet:items-center stablet:space-x-1'>
+            <Link to='./' className='btn btn--hovernav'>
+              <li className='py-2 stablet:px-2'>
+                Trang chủ
+              </li>
+            </Link>
+            <Link to='./videos' className='btn btn--hovernav'>
+              <li className='py-2 stablet:px-2'>
+              Videos
+              </li>
+            </Link>
+            <Link to='./technical' className='btn btn--hovernav'>
+              <li className='py-2 stablet:px-2'>
+                Kỹ thuật
+              </li>
+            </Link>
+            <Link to='./partner' className='btn btn--hovernav'>
+              <li className='py-2 stablet:px-2'>
+              Hợp tác
+              </li>
+            </Link>
+            <Link to='./contact' className='btn btn--hovernav'>
+              <li className='py-2 stablet:px-2'>
+              Liên hệ
+              </li>
+            </Link>
         </ul>
       </nav>
   </div>
-  )
+)
 }
-
-export default Navbar

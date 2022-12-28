@@ -4,80 +4,82 @@ import {FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faFacebook, faYoutube } from '@fortawesome/free-brands-svg-icons'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons'
 
-import './Footer.css'
 
-const Footer =()=>{
+export default function Footer(){
   return(
   <>
-    <footer>
-      <div className='row-s'>
-        <div className='professor col-s-3'>
-          <p>
-            <span>DÀNH CHO<br />CHUYÊN GIA</span>
-          </p>
+    <footer className='text-white bg-[#0b233e]'>
+      <div className='p-1 grid grid-cols-4'>
+          <div className='flex items-center justify-center'>
+                <p className='h-auto text-center text-black'>
+            <span className='block px-2 py-1 font-bold bg-gray-600 text-[#0b233e]'>
+                  Dành cho
+                <br />
+                  chuyên gia
+            </span>
+                </p>
         </div>
-        <div className='col-s-3'>
-          <ul>
+        <div className='flex justify-center'>
+          <ul className='w-11/12 space-y-1'>
             <li><Link to='./designers'>Nhà Thiết Kế</Link></li>
             <li><Link to='./architects'>Kiến Trúc Sư</Link></li>
             <li><Link to='./contractors'>Nhà Thầu</Link></li>
           </ul>
         </div>
-        <div className='col-s-3'>
-          <ul>
+
+        <div className='flex justify-center'>
+          <ul className='w-11/12 space-y-1'>
             <li><Link to='./certificate'>Chứng chỉ</Link></li>
             <li><Link to='./documents'>Tài liệu</Link></li>
           </ul>
         </div>
-        <div className='col-s-3'>
-          <ul>
+        <div className='flex justify-center'>
+          <ul className='w-11/12 space-y-1'>
             <li><Link to='./colorpallete'>Bảng màu sơn</Link></li>
             <li><Link to='./howtos'>Hướng dẫn</Link></li>
           </ul>
         </div>
       </div>
+    <hr />
 
-      <hr />
-
-      <div className='row-s'>
-        <div className='col-s-3'>
-          <ul>
-            <li><p>ROXO</p></li>
-            <li><Link to='./intro'>Giới thiệu</Link></li>
-            <li><Link to='./socialresponsibility'>Trách nhiệm xã hội</Link></li>
-            <li><Link to='./careers'>Sự nghiệp</Link></li>
-            <li><Link to='./publicrelation'>Báo chí</Link></li>
+      <div className='p-1 grid grid-cols-4'>
+        <div className='flex justify-center'>
+          <ul className='w-11/12 space-y-1'>
+            <h2 className='text-gray-600'>Roxo</h2>
+            <li><Link to='./intro'>- Giới thiệu</Link></li>
+            <li><Link to='./socialresponsibility'>- Trách nhiệm xã hội</Link></li>
+            <li><Link to='./careers'>- Sự nghiệp</Link></li>
+            <li><Link to='./publicrelation'>- Báo chí</Link></li>
           </ul>
         </div>
-        <div className='col-s-3'>
-          <ul>
-            <li><p>Trợ giúp</p></li>
-            <li><Link to='./contact'>Liên hệ</Link></li>
-            <li><Link to='./faqs'>FAQs</Link></li>
-            <li><Link to='./paintcal'>Tính sơn</Link></li>
-            <li><Link to='./sitemap'>Sitemap</Link></li>
+        <div className='flex justify-center'>
+          <ul className='w-11/12 space-y-1'>
+            <h2 className='text-gray-600'>Trợ giúp</h2>
+            <li><Link to='./contact'>- Liên hệ</Link></li>
+            <li><Link to='./faqs'>- FAQs</Link></li>
+            <li><Link to='./paintcal'>- Tính sơn</Link></li>
+            <li><Link to='./sitemap'>- Sitemap</Link></li>
           </ul>
         </div>
-        <div className='col-s-3'>
-          <ul>
-            <li><p>Cửa hàng</p></li>
-            <li><Link to='./buynow'>Mua ngay</Link></li>
-            <li><Link to='./policies'>Chính sách</Link></li>
+        <div className='flex justify-center'>
+          <ul className='w-11/12 space-y-1'>
+            <h2 className='text-gray-600'>Cửa hàng</h2>
+            <li><Link to='./buynow'>- Mua ngay</Link></li>
+            <li><Link to='./policies'>- Chính sách</Link></li>
           </ul>
         </div>
-        <div className='col-s-3'>
-          <ul>
-            <li><p>Với đại lý</p></li>
-            <li><Link to='./becomepartner'>Làm đại lý</Link></li>
-            <li><Link to='./partnerswebsite'>Web đại lý</Link></li>
+        <div className='flex justify-center'>
+          <ul className='w-11/12 space-y-1'>
+            <h2 className='text-gray-600'>Với đại lý</h2>
+            <li><Link to='./becomepartner'>- Làm đại lý</Link></li>
+            <li><Link to='./partnerswebsite'>- Web đại lý</Link></li>
           </ul>
         </div>
       </div>
+    <hr />
 
-      <hr />
-
-      <div className='row-s'>
-        <div className='socialMediaIcon col-s-4'>
+      <div className='p-1 grid grid-cols-3'>
+        <div className='flex items-center justify-end space-x-2'>
           <a href="https://facebook.com/sonroxo">
             <FontAwesomeIcon icon={faFacebook} />
           </a>
@@ -85,25 +87,27 @@ const Footer =()=>{
             <FontAwesomeIcon icon={faYoutube} />
           </a>
         </div>
-        <div className='locationContainer col-s-4'>
-          <ul>
-            <li className='iconLocation'>
-              <Link to='./'>
-                <FontAwesomeIcon icon={faLocationDot} />
-              </Link>
-    </li>
-            <li><span>Cửa hàng</span></li>
+        <div className='flex items-center justify-center'>
+          <ul className='flex space-x-2'>
+            <Link to='./'>
+              <li>
+                  <FontAwesomeIcon icon={faLocationDot} />
+              </li>
+            </Link>
+            <Link to='./'>
+              <li><span>Cửa hàng</span></li>
+            </Link>
           </ul>
         </div>
-        <div className='col-s-4'>
-          <select>
+        <div className='flex justify-start bg-[#0b233e] items-center'>
+          <select className='text-[#0b233e]'>
             <option value='vietnamese' selected='selected'>Vietnamese</option>
-            <option valuw='english'>English</option>
+            <option value='english'>English</option>
           </select>
         </div>
       </div>
+
     </footer>
   </>
   )
 }
-export default Footer
