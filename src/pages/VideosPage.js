@@ -6,39 +6,21 @@ import Cards from '../components/Cards.js'
 export default function VideosPage(){
   const videolist = [
     {
-      name:'first video',
-      describe:'how to do ads',
+      name:'Sơn nhũ vàng 24k',
+      describe:'Đẹp lộng lẫy cùng ánh kim Roxo',
       mediaSource: 'https://youtube.com/embed/vmQTqHNToUI',
       mediaType: 'youtube',
     },
     {
-      name:'first video',
-      describe:'how to do ads',
-      mediaSource: 'https://youtube.com/embed/vmQTqHNToUI',
+      name:'Xử lý chống thấm mattit',
+      describe:'Sơn chống thấm và xử lý muối',
+      mediaSource: 'https://youtube.com/embed/tlrSB9nIDco',
       mediaType: 'youtube',
     },
     {
-      name:'first video',
-      describe:'how to do ads',
-      mediaSource: 'https://youtube.com/embed/vmQTqHNToUI',
-      mediaType: 'youtube',
-    },
-    {
-      name:'first video',
-      describe:'how to do ads',
-      mediaSource: 'https://youtube.com/embed/vmQTqHNToUI',
-      mediaType: 'youtube',
-    },
-    {
-      name:'first video',
-      describe:'how to do ads',
-      mediaSource: 'https://youtube.com/embed/vmQTqHNToUI',
-      mediaType: 'youtube',
-    },
-    {
-      name:'first video',
-      describe:'how to do ads',
-      mediaSource: 'https://youtube.com/embed/vmQTqHNToUI',
+      name:'Chống thấm ngược Roxo',
+      describe:'Test bề mặt chống thấm',
+      mediaSource: 'https://youtube.com/embed/3naYa8Ocrp8',
       mediaType: 'youtube',
     },
   ]
@@ -48,7 +30,7 @@ export default function VideosPage(){
     sendImg='./img/backgroundtheme.jpg'
     sendAlt='roxo banner background'
     />
-    <TitleCenter name='Videos' subtitle='Danh sách videos từ Roxo'/>
+    <TitleCenter name='Videos' subtitle='Xem Youtube để cập nhật thêm nhiều Videos hơn'/>
     <Cards dataCards={videolist}/>
   </>
   )

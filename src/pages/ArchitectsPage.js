@@ -1,10 +1,18 @@
-import React from 'react'
+import React, {useState} from 'react'
 
-const ArchitectsPage=()=>{
+export default function ArchitectsPage(){
+  const [click,setClick] = useState(null)
+
   return(
     <>
-    <p>This is ArchitectsPage</p>
+    <button onClick={() => setClick('A')}>Button A</button>
+    <button onClick={() => setClick('B')}>Button B</button>
+    <p className={click==='A'? 'block':'hidden'}>
+    This is after clicked button A
+    </p>
+    <p className={click==='B'? 'block':'hidden'}>
+    This is after clicked button B
+    </p>
     </>
   )
 }
-export default ArchitectsPage

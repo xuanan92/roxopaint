@@ -35,7 +35,7 @@ export default function Footer(){
         </div>
         <div className='flex justify-center'>
           <ul className='w-11/12 space-y-1'>
-            <li><Link to='./colorpallete'>Bảng màu sơn</Link></li>
+            <li><Link to='./colorpalette'>Bảng màu sơn</Link></li>
             <li><Link to='./howtos'>Hướng dẫn</Link></li>
           </ul>
         </div>
@@ -101,12 +101,11 @@ export default function Footer(){
         </div>
         <div className='flex justify-start bg-[#0b233e] items-center'>
           <select className='text-[#0b233e]'>
-            <option value='vietnamese' selected='selected'>Vietnamese</option>
+            <option value='vietnamese' defaultValue='selected'>Vietnamese</option>
             <option value='english'>English</option>
           </select>
         </div>
       </div>
-
     </footer>
   </>
   )

@@ -3,7 +3,7 @@ import React from 'react'
 export default function Cards(props){
   const cards = props.dataCards.map((card,index)=>{
   return(
-    <div className={`w-full p-2 m-2 bg-red-100 border border-solid border-slate-200 rounded-xl hover:transition-all duration-500 ease-in-out hover:bg-white drop-shadow-xl`} key={index}>
+    <div className={`w-full p-2 m-2 bg-red-100 border border-solid border-slate-200 rounded-xl hover:bg-white drop-shadow-xl`} key={index}>
       <div className='flex justify-center w-full aspect-video hover:scale-200'>
         {card.mediaType === 'youtube' ?
           <iframe className='w-11/12 aspect-video' src={card.mediaSource} title='Youtube video player' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen />

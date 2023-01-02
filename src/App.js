@@ -1,5 +1,6 @@
 import React from 'react'
 import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import ReactDOMServer from 'react-dom/server'
 
 import PreNavbar from './components/PreNavbar.js'
 import LoginPage from './pages/LoginPage.js'
@@ -18,7 +19,7 @@ import ArchitectsPage from './pages/ArchitectsPage.js'
 import ContractorsPage from './pages/ContractorsPage.js'
 import CertificatePage from './pages/CertificatePage.js'
 import DocumentsPage from './pages/DocumentsPage.js'
-import ColorPalletePage from './pages/ColorPalletePage.js'
+import ColorPalettePage from './pages/ColorPalettePage.js'
 import HowTosPage from './pages/HowTosPage.js'
 import SocialResponsibilityPage from './pages/SocialResponsibilityPage.js'
 import CareersPage from './pages/CareersPage.js'
@@ -57,7 +58,7 @@ function App() {
           <Route path='/certificate' element={<CertificatePage />} exact />
           <Route path='/documents' element={<DocumentsPage />} exact />
           <Route path='/intro' element={<IntroPage />} exact />
-          <Route path='/colorpallete' element={<ColorPalletePage />} exact />
+          <Route path='/colorpalette' element={<ColorPalettePage />} exact />
           <Route path='/howtos' element={<HowTosPage />} exact />
           <Route path='/socialresponsibility' element={<SocialResponsibilityPage />} exact />
           <Route path='/careers' element={<CareersPage />} exact />
@@ -77,4 +78,5 @@ function App() {
   );
 }
 
+ReactDOMServer.renderToString(<App />)
 export default App;

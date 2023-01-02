@@ -54,7 +54,7 @@ export default function HomePage() {
       />
       <div className='absolute bottom-5 left-5'>
         <Button hlink='/products'>Bảng giá</Button>
-        <Button hlink='/colorpalette>Bảng màu</Button>
+        <Button hlink='/colorpalette'>Bảng màu</Button>
       </div>
     </div>
 
@@ -78,7 +78,9 @@ export default function HomePage() {
 
     <TitleCenter name= 'Tính năng sản phẩm' />
 
-    <Cards dataCards={productsCard} />
+    <Cards dataCards={productsCard} ani='this is how' />
+
+    <div className='break' />
 
   </body>
   )

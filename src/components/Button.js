@@ -11,6 +11,7 @@ export default function Button({
   onClick,
   buttonStyle,
   buttonSize,
+  value,
 }) {
   const checkStyle = STYLES.includes(buttonStyle) ? buttonStyle : STYLES[0]
   const checkSize = SIZES.includes(buttonSize) ? buttonSize : SIZES[0]
@@ -22,6 +23,7 @@ export default function Button({
       className = {`btn ${checkStyle} ${checkSize}`}
       onClick={onClick}
       type={type}
+      value={value}
       >
       {children}
       </button>

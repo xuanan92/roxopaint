@@ -484,24 +484,7 @@ export default function ProductsPage() {
         note:['Chống sùi chân tường và bẩn trong tường đẩy ra.',<br/>,'Mỗi lớp sơn khô tối thiểu 24h. Sơn từ 1-2 lớp.'],
       },
     ]
-    const [extClick, setExtClick] = useState(false)
-    const handleExtClick = () => setExtClick(!extClick)
-    const [inClick,setInClick] = useState(false)
-    const handleInClick = () => setInClick(!inClick)
-    const [whiteceilClick,setWhiteCeilClick] = useState(false)
-    const handleWhiteCeilClick = () => setWhiteCeilClick(!whiteceilClick)
-    const [primerClick,setPrimerClick] = useState(false)
-    const handlePrimerClick = () => setPrimerClick(!primerClick)
-    const [puttyClick,setPuttyClick] = useState(false)
-    const handlePuttyClick = () => setPuttyClick(!puttyClick)
-    const [waterproofwallClick,setWaterProofWallClick] = useState(false)
-    const handleWaterProofWallClick = () => setWaterProofWallClick(!waterproofwallClick)
-    const [waterprooffloorClick,setWaterProofFloorClick] = useState(false)
-    const handleWaterProofFloorClick = () => setWaterProofFloorClick(!waterprooffloorClick)
-    const [specialClick,setSpecialClick] = useState(false)
-    const handleSpecialClick = () => setSpecialClick(!specialClick)
-    const [clearClick,setClearClick] = useState(false)
-    const handleClearClick = () => setClearClick(!clearClick)
+    const [click, setClick] = useState(null)
 
   return(
     <>
@@ -517,44 +500,44 @@ export default function ProductsPage() {
       <div className='w-full stablet:flex'>
         <div className='flex justify-center h-full'>
           <ul className='w-auto h-auto p-4 m-2 text-white list-none bg-blue-400 rounded stablet:w-56'>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handleExtClick}>Sơn ngoài trời</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handleInClick}>Sơn trong nhà</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handleWhiteCeilClick}>Sơn siêu trắng trần</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handlePrimerClick}>Sơn lót kháng kiềm</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handlePuttyClick}>Bột bả</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handleWaterProofWallClick}>Sơn chống thấm tường</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handleWaterProofFloorClick}>Sơn chống thấm sàn</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handleSpecialClick}>Sơn đặc chủng</li>
-            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={handleClearClick}>Sơn trong suốt bảo vệ</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('A')}>Sơn ngoài trời</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('B')}>Sơn trong nhà</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('C')}>Sơn siêu trắng trần</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('D')}>Sơn lót kháng kiềm</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('E')}>Bột bả</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('F')}>Sơn chống thấm tường</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('G')}>Sơn chống thấm sàn</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('H')}>Sơn đặc chủng</li>
+            <li className='p-2 hover:bg-blue-50 hover:rounded hover:text-amber-500 active:text-red-800 active:bg-gray-400' onClick={() => setClick('I')}>Sơn trong suốt bảo vệ</li>
           </ul>
         </div>
 
-        <div className='w-full p-2 space-y-4'>
-          <div className={extClick? 'block': 'hidden'}>
+        <div className='w-full p-2'>
+          <div className={click==='A'? 'block': 'hidden'}>
             <PriceListTable dataHead={extproductsHead} dataBody ={extproductsData} />
           </div>
-          <div className={inClick? 'block': 'hidden'}>
+          <div className={click==='B'? 'block': 'hidden'}>
             <PriceListTable dataHead={inproductsHead} dataBody ={inproductsData} />
           </div>
-          <div className={whiteceilClick? 'block': 'hidden'}>
+          <div className={click==='C'? 'block': 'hidden'}>
             <PriceListTable dataHead={whiteceilproductsHead} dataBody ={whiteceilproductsData} />
           </div>
-          <div className={primerClick? 'block': 'hidden'}>
+          <div className={click==='D'? 'block': 'hidden'}>
             <PriceListTable dataHead={primerproductsHead} dataBody ={primerproductsData} />
           </div>
-          <div className={puttyClick? 'block': 'hidden'}>
+          <div className={click==='E'? 'block': 'hidden'}>
             <PriceListTable dataHead={puttyproductsHead} dataBody ={puttyproductsData} />
           </div>
-          <div className={waterproofwallClick? 'block': 'hidden'}>
+          <div className={click==='F'? 'block': 'hidden'}>
             <PriceListTable dataHead={waterproofwallproductsHead} dataBody ={waterproofwallproductsData} />
-          </div>
-          <div className={waterprooffloorClick? 'block': 'hidden'}>
+         </div>
+          <div className={click==='G'? 'block': 'hidden'}>
             <PriceListTable dataHead={waterprooffloorproductsHead} dataBody ={waterprooffloorproductsData} />
           </div>
-          <div className={specialClick? 'block': 'hidden'}>
+          <div className={click==='H'? 'block': 'hidden'}>
             <PriceListTable dataHead={specialproductsHead} dataBody ={specialproductsData} />
           </div>
-          <div className={clearClick? 'block': 'hidden'}>
+          <div className={click==='I'? 'block': 'hidden'}>
             <PriceListTable dataHead={zeroopacityproductsHead} dataBody ={zeroopacityproductsData} />
           </div>
         </div>
