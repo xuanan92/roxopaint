@@ -69,7 +69,7 @@ export default function HomePage() {
       <div className='break' />
 
     <MediaText mediaType='image'
-    mediaSource='./logo512.png'
+    mediaSource='./RoxoMountainWeather.jpg'
     mediaAlt='Roxo logo'
     textHead=''
     textPara={['Sử dụng sản phẩm sơn sắc màu thịnh vượng cho những không gian đặc biệt, khơi nguồn sáng tạo, hiệu quả vươn tới đỉnh cao giàu có, sang trọng!', <br/>,'Những sản phẩm bền theo thời gian cùng cơ chế bảo hành dài hạn và nổi bật tạo cơ sở niềm tin chưa từng lay chuyển về sự thịnh vượng.']}
