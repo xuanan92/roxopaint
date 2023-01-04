@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import PriceListTable from '../components/PriceListTable.js';
 import TitleCenter from '../components/TitleCenter.js'
 import Banner from '../components/Banner.js'
+import Button from '../components/Button.js'
 
 export default function ProductsPage() {
     const extproductsHead = [
@@ -488,12 +489,16 @@ export default function ProductsPage() {
 
   return(
     <>
-      <div className='bannerContainer'>
-        <Banner
-        sendImg='./img/backgroundtheme.jpg'
-        sendAlt='roxo banner background'
-        />
+    <div className='relative h-auto'>
+      <Banner
+      sendImg='./img/backgroundtheme.jpg'
+      sendAlt='roxo banner background'
+      />
+      <div className='absolute bottom-5 left-5'>
+        <Button hlink='/products'>Bảng giá</Button>
+        <Button hlink='/colorpalette'>Bảng màu</Button>
       </div>
+    </div>
 
       <TitleCenter name='Bảng giá sản phẩm Sơn Roxo' />
 

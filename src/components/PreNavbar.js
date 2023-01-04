@@ -4,6 +4,7 @@ import {Link} from 'react-router-dom'
 export default function PreNavbar(){
   return(
     <div className='text-xs'>
+      <div className="break" />
       <ul className='flex float-right'>
         <li className='inline-block px-2 py-1 mx-1 rounded hover:bg-red-50'>
         Working: T2-T6 (8am - 5pm)

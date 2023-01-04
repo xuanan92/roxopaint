@@ -10,6 +10,7 @@ export default function Navbar() {
 
   return(
   <div className='relative items-center block w-full clear-both stablet:flex'>
+      <div className = 'break' />
       <div className='flex h-12 align-middle'>
         <div className='flex items-center h-12'>
           <img className='h-full' src='./img/roxodarktext.png' alt='roxo logo' />
