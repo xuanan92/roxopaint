@@ -1,7 +1,6 @@
 import React,{Component} from 'react'
-import Banner from '../components/Banner.js'
-import Button from '../components/Button.js'
-import TitleCenter from '../components/TitleCenter.js'
+import Button from '../components/Button.jsx'
+import TitleCenter from '../components/TitleCenter.jsx'
 
 class ColorPalettePage extends Component {
   constructor(props){
@@ -1472,12 +1471,6 @@ class ColorPalettePage extends Component {
 
   return(
   <>
-    <div className='bannerContainer'>
-      <Banner
-      sendImg='./img/backgroundtheme.jpg'
-      sendAlt='roxo banner background'
-      />
-    </div>
     <TitleCenter name='Bảng màu sơn Roxo'/>
     <Button onClick={this.handleClick} value='black'>Black</Button>
     <Button onClick={this.handleClick} value='red'>Red</Button>

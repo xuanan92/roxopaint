@@ -1,9 +1,7 @@
 import React from "react"
-import Banner from '../components/Banner.js'
-import TitleCenter from '../components/TitleCenter.js'
-import MediaText from '../components/MediaText.js'
-import Button from '../components/Button.js'
-import Cards from '../components/Cards.js'
+import TitleCenter from '../components/TitleCenter.jsx'
+import MediaText from '../components/MediaText.jsx'
+import Cards from '../components/Cards.jsx'
 
 export default function HomePage() {
     const productsCard = [
@@ -36,7 +34,7 @@ export default function HomePage() {
         name:'Roxo Shield',
         describe: 'The best product',
         mediaSource:'./img/roxodarktext.png',
-        mediaAlt:"abc",
+        meaAlt:"abc",
       },
       {
         name:'Roxo Pro',
@@ -47,16 +45,6 @@ export default function HomePage() {
     ]
   return(
   <body>
-    <div className='relative h-auto'>
-      <Banner
-      sendImg='./img/backgroundtheme.jpg'
-      sendAlt='roxo banner background'
-      />
-      <div className='absolute bottom-5 left-5'>
-        <Button hlink='/products'>Bảng giá</Button>
-        <Button hlink='/colorpalette'>Bảng màu</Button>
-      </div>
-    </div>
 
     <TitleCenter name='Sắc Màu Thịnh Vượng' />
 

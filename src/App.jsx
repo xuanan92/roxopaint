@@ -1,37 +1,33 @@
-import React from 'react'
-import {BrowserRouter as Router, Routes, Route } from 'react-router-dom'
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom'
 import ReactDOMServer from 'react-dom/server'
-
-import PreNavbar from './components/PreNavbar.js'
-import LoginPage from './pages/LoginPage.js'
-import Navbar from './components/Navbar.js'
-import HomePage from './pages/HomePage.js'
-import ProductsPage from './pages/ProductsPage.js'
-import VideosPage from './pages/VideosPage.js'
-import TechnicalPage from './pages/TechnicalPage.js'
-import PartnerPage from './pages/PartnerPage.js'
-import ContactPage from './pages/ContactPage.js'
-import Footer from './components/Footer.js'
-
-
-import DesignersPage from './pages/DesignersPage.js'
-import ArchitectsPage from './pages/ArchitectsPage.js'
-import ContractorsPage from './pages/ContractorsPage.js'
-import CertificatePage from './pages/CertificatePage.js'
-import DocumentsPage from './pages/DocumentsPage.js'
-import ColorPalettePage from './pages/ColorPalettePage.js'
-import HowTosPage from './pages/HowTosPage.js'
-import SocialResponsibilityPage from './pages/SocialResponsibilityPage.js'
-import CareersPage from './pages/CareersPage.js'
-import PublicRelationPage from './pages/PublicRelationPage.js'
-import FAQsPage from './pages/FAQsPage.js'
-import PaintCalPage from './pages/PaintCalPage.js'
-import SiteMapPage from './pages/SiteMapPage.js'
-import BuyNowPage from './pages/BuyNowPage.js'
-import IntroPage from './pages/IntroPage.js'
-import PoliciesPage from './pages/PoliciesPage.js'
-import BecomePartnerPage from './pages/BecomePartnerPage.js'
-import PartnerWebsitePage from './pages/PartnerWebsitePage.js'
+import PreNavbar from './components/PreNavbar.jsx'
+import LoginPage from './pages/LoginPage.jsx'
+import Navbar from './components/Navbar.jsx'
+import HomePage from './pages/HomePage.jsx'
+import ProductsPage from './pages/ProductsPage.jsx'
+import VideosPage from './pages/VideosPage.jsx'
+import TechnicalPage from './pages/TechnicalPage.jsx'
+import PartnerPage from './pages/PartnerPage.jsx'
+import ContactPage from './pages/ContactPage.jsx'
+import Footer from './components/Footer.jsx'
+import DesignersPage from './pages/DesignersPage.jsx'
+import ArchitectsPage from './pages/ArchitectsPage.jsx'
+import ContractorsPage from './pages/ContractorsPage.jsx'
+import CertificatePage from './pages/CertificatePage.jsx'
+import DocumentsPage from './pages/DocumentsPage.jsx'
+import ColorPalettePage from './pages/ColorPalettePage.jsx'
+import HowTosPage from './pages/HowTosPage.jsx'
+import SocialResponsibilityPage from './pages/SocialResponsibilityPage.jsx'
+import CareersPage from './pages/CareersPage.jsx'
+import PublicRelationPage from './pages/PublicRelationPage.jsx'
+import FAQsPage from './pages/FAQsPage.jsx'
+import PaintCalPage from './pages/PaintCalPage.jsx'
+import SiteMapPage from './pages/SiteMapPage.jsx'
+import BuyNowPage from './pages/BuyNowPage.jsx'
+import IntroPage from './pages/IntroPage.jsx'
+import PoliciesPage from './pages/PoliciesPage.jsx'
+import BecomePartnerPage from './pages/BecomePartnerPage.jsx'
+import PartnerWebsitePage from './pages/PartnerWebsitePage.jsx'
 
 function App() {
   return (
@@ -42,16 +38,14 @@ function App() {
       <Navbar />
         <Routes>
           <Route path='/login' element={<LoginPage />} exact />
-
           <Route path='/' element={<HomePage />} exact />
           <Route path='/products' element={<ProductsPage />} exact />
           <Route path='/videos' element={<VideosPage />} exact />
           <Route path='/technical' element={<TechnicalPage />} exact />
           <Route path='/partner' element={<PartnerPage />} exact />
           <Route path='/contact' element={<ContactPage />} exact />
-
         </Routes>
-          <Routes>
+	<Routes>
           <Route path='/designers' element={<DesignersPage />} exact />
           <Route path='/architects' element={<ArchitectsPage />}exact />
           <Route path='/contractors' element={<ContractorsPage />} exact />

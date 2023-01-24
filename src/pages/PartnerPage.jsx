@@ -1,21 +1,9 @@
 import React from 'react'
-import Banner from '../components/Banner.js'
-import TitleCenter from '../components/TitleCenter.js'
-import Button from '../components/Button.js'
+import TitleCenter from '../components/TitleCenter.jsx'
 
 export default function PartnerPage(){
   return(
   <>
-    <div className='relative h-auto'>
-      <Banner
-      sendImg='./img/backgroundtheme.jpg'
-      sendAlt='roxo banner background'
-      />
-      <div className='absolute bottom-5 left-5'>
-        <Button hlink='/products'>Bảng giá</Button>
-        <Button hlink='/colorpalette'>Bảng màu</Button>
-      </div>
-    </div>
     <TitleCenter name='Hợp tác' subtitle='Bắt đầu kinh doanh với sản phẩm sơn chất lượng nhất' />
     <div className='w-10/12 mx-auto'>
         <p className='indent-4'>

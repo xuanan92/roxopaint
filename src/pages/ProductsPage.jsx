@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import PriceListTable from '../components/PriceListTable.js';
-import TitleCenter from '../components/TitleCenter.js'
-import Banner from '../components/Banner.js'
-import Button from '../components/Button.js'
+import PriceListTable from '../components/PriceListTable.jsx';
+import TitleCenter from '../components/TitleCenter.jsx'
+import Banner from '../components/Banner.jsx'
+import Button from '../components/Button.jsx'
 
 export default function ProductsPage() {
     const extproductsHead = [

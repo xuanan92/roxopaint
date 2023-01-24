@@ -1,6 +1,6 @@
 import React from 'react'
-import Banner from '../components/Banner.js'
-import TitleCenter from '../components/TitleCenter.js'
+import Banner from '../components/Banner.jsx'
+import TitleCenter from '../components/TitleCenter.jsx'
 
 export default function FAQsPage(){
   const faqs=[
