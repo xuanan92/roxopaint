@@ -45,7 +45,7 @@ function App() {
           <Route path='/partner' element={<PartnerPage />} exact />
           <Route path='/contact' element={<ContactPage />} exact />
         </Routes>
-	<Routes>
+        <Routes>
           <Route path='/designers' element={<DesignersPage />} exact />
           <Route path='/architects' element={<ArchitectsPage />}exact />
           <Route path='/contractors' element={<ContractorsPage />} exact />
