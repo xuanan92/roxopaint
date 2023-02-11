@@ -1,7 +1,6 @@
 import React, {useState} from 'react'
 
 export default function ArchitectsPage(){
-  const [click,setClick] = useState(null)
 
   return(
     <>
