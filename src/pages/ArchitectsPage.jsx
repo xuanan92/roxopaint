@@ -5,14 +5,10 @@ export default function ArchitectsPage(){
 
   return(
     <>
-    <button onClick={() => setClick('A')}>Button A</button>
-    <button onClick={() => setClick('B')}>Button B</button>
-    <p className={click==='A'? 'block':'hidden'}>
-    This is after clicked button A
-    </p>
-    <p className={click==='B'? 'block':'hidden'}>
-    This is after clicked button B
-    </p>
+      <div className="p-2">
+        <h1 className="p-2">Dành cho nhà thiết kế</h1>
+      </div>
+      
     </>
   )
 }

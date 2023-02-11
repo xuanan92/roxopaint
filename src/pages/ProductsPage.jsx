@@ -489,17 +489,6 @@ export default function ProductsPage() {
 
   return(
     <>
-    <div className='relative h-auto'>
-      <Banner
-      sendImg='./img/backgroundtheme.jpg'
-      sendAlt='roxo banner background'
-      />
-      <div className='absolute bottom-5 left-5'>
-        <Button hlink='/products'>Bảng giá</Button>
-        <Button hlink='/colorpalette'>Bảng màu</Button>
-      </div>
-    </div>
-
       <TitleCenter name='Bảng giá sản phẩm Sơn Roxo' />
 
       <div className='w-full stablet:flex'>
